@@ -13,7 +13,19 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 **** RODAPÉ
 **** PÁGINA INICIAL
 */
-
+/* RESET */
+ol, ul {
+    list-style: none outside none;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, button {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    font-size: 100%;
+    margin: 0;
+    outline: 0 none;
+    padding: 0;
+    vertical-align: baseline;
+}
 /* VARIÁVEIS */
 :root{
   
@@ -21,18 +33,115 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 
 /*BODY*/
 	body{
-
+		list-style: none;
+		background-color: #00002e;
+		font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 	}
 
 /*TOPO*/
 	header.topo{
-		
+		margin: 0 auto;
+	}
+	header img{
+		height: 100px;
+		width: 320px;
+	}
+	header h2{
+		color: white;
+		font-size: 30px;
+		text-align: center;
+		width: 400px;
 	}
 
 /*RODAPÉ*/
+footer{
 	
-
+	text-decoration: none;
+	text-align: center;
+	height: 20px;
+}
+footer button{
+	padding: 8px 30px;
+	border: solid 1px;
+	color: white;
+}
 /*PÁGINA INICIAL*/
-	div.pg-home{
-		
+	h3{
+		text-align: center;
+	}
+	
+	.page-home{
+		color: white;
+		height: 500px;
+		width: 400px;
+		overflow: hidden;
+	}
+	.user{
+		display: flex;
+		flex-wrap: wrap;
+		padding: 70px 20px;
+	}
+	figure img{
+		height: 100px;
+		width: auto;
+	}
+	.user__1{
+		margin-left: 0px;
+	}
+	.hidden{
+		display: none;
+	}
+	.addPerfil{
+		width: 100px;
+	}
+	.addPerfil h3{
+		width: 180px;
+	}
+
+	@media screen and (min-width: 600px){
+		header h2 {
+			color: white;
+			font-size: 70px;
+			width: auto;
+			text-align: center;
+			margin-right: 200px;
+		}
+		.page-home{
+			color: white;
+			height: 700px;
+			width: 858px;
+			overflow: hidden;
+			margin: 0 auto;
+		}
+		.user{
+
+			display: flex;
+			flex-wrap: wrap;
+			padding: 70px 20px;
+
+		}
+		figure img{
+			height: 60px;
+			width: auto;
+		}
+		.user__1 img{
+			height: 200px;
+		}
+		.user__2 img{
+			height: 200px;
+		}
+		.user__3 img{
+			height: 200px;
+		}
+		.addPerfil img{
+			height: 200px;
+		}
+		footer{
+			margin-right: 230px;
+		}
+		footer button{
+			padding: 15px 10px;
+			border: solid 1px;
+			color: white;
+		}
 	}
